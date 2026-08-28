@@ -1,0 +1,60 @@
+partial alphanumeric_keys
+xkb_symbols "arrowless" {
+    key <RALT> {         [           ISO_Level3_Shift,          Meta_R ] };
+
+    key <AC04> {
+        type= "THREE_LEVEL",
+        symbols[Group1]= [               f,               F, Right ],
+        symbols[Group2]= [      Cyrillic_a,      Cyrillic_A, Right ],
+
+	actions[Group1]= [ NoAction(), NoAction(), RedirectKey(keycode=<RGHT>, clearmods=LevelThree) ], 
+	actions[Group2]= [ NoAction(), NoAction(), RedirectKey(keycode=<RGHT>, clearmods=LevelThree) ]
+    };
+
+    key <AB05> {
+        type= "THREE_LEVEL",
+        symbols[Group1]= [               b,               B, Left ],
+        symbols[Group2]= [      Cyrillic_i,      Cyrillic_I, Left ],
+
+	actions[Group1]= [ NoAction(), NoAction(), RedirectKey(keycode=<LEFT>, clearmods=LevelThree) ], 
+	actions[Group2]= [ NoAction(), NoAction(), RedirectKey(keycode=<LEFT>, clearmods=LevelThree) ]
+    };
+    key <AB06> {
+        type= "THREE_LEVEL",
+        symbols[Group1]= [               n,               N, Down ],
+        symbols[Group2]= [     Cyrillic_te,     Cyrillic_TE, Down ],
+
+	actions[Group1]= [ NoAction(), NoAction(), RedirectKey(keycode=<DOWN>, clearmods=LevelThree) ], 
+	actions[Group2]= [ NoAction(), NoAction(), RedirectKey(keycode=<DOWN>, clearmods=LevelThree) ]
+    };
+    key <AD10> {
+        type= "THREE_LEVEL",
+        symbols[Group1]= [               p,               P, Up ],
+        symbols[Group2]= [     Cyrillic_ze,     Cyrillic_ZE, Up ],
+
+	actions[Group1]= [ NoAction(), NoAction(), RedirectKey(keycode=<UP>, clearmods=LevelThree) ], 
+	actions[Group2]= [ NoAction(), NoAction(), RedirectKey(keycode=<UP>, clearmods=LevelThree) ]
+
+    };
+
+    key <AD03> {
+        type= "THREE_LEVEL",
+        symbols[Group1]= [               e,               E, End ],
+        symbols[Group2]= [      Cyrillic_u,      Cyrillic_U, End ],
+
+	actions[Group1]= [ NoAction(), NoAction(), RedirectKey(keycode=<END>, clearmods=LevelThree) ], 
+	actions[Group2]= [ NoAction(), NoAction(), RedirectKey(keycode=<END>, clearmods=LevelThree) ]
+
+    };
+
+    key <AC01> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               a,               A, Home ],
+        symbols[Group2]= [     Cyrillic_ef,     Cyrillic_EF, Home ],
+
+	actions[Group1]= [ NoAction(), NoAction(), RedirectKey(keycode=<HOME>, clearmods=LevelThree) ], 
+	actions[Group2]= [ NoAction(), NoAction(), RedirectKey(keycode=<HOME>, clearmods=LevelThree) ]
+
+    };
+
+};
