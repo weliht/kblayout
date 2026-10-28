@@ -1,5 +1,7 @@
 # Small about
 
+__Status: doesn't work properly for now__
+
 Self `xkb` modifications to make `compact qwerty` kyeboards more convenient.
 
 This modifications and instrucation are applicable for X11. 
